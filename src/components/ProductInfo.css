@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* --- Page Layout --- */
+.product {
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	min-height: 100vh;
+	font-family: 'Poppins';
+	text-align: center;
+	padding: 20px;
+	overflow-x: hidden;
+}
+
+.product h1 {
+	font-size: 1.25rem;
+	margin-bottom: 5px;
+	font-weight: bold;
+	color: #39b54a;
+}
+
+.product p {
+	font-size: 1.25rem;
+	margin-top: 10px;
+	color: #000;
+}
+
+.error {
+	color: red;
+	font-weight: bold;
+}
+
+.product-details h2 {
+	font-size: 2rem;
+	margin-bottom: 30px;
+}
+
+/* --- Buttons --- */
+.product-button {
+	padding: 12px 24px;
+	margin-top: 20px;
+	width: 80%;
+	color: #000000;
+	border: 2px solid #39b54a;
+	border-radius: 8px;
+	font-size: 1rem;
+	cursor: pointer;
+	transition: background-color 0.2s;
+	margin-bottom: 3rem;
+}
+
+.product-button:hover {
+	background-color: #39b54a;
+}
+
+.toggle-button,
+.toggle-button.small {
+	width: 100%;
+	text-align: left;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	font-weight: 500;
+	transition: background-color 0.3s ease;
+	padding: 0.6rem 1rem;
+	box-sizing: border-box;
+}
+
+.toggle-button {
+	background-color: #39b54a;
+	color: white;
+	font-size: 1rem;
+}
+
+.toggle-button:hover {
+	background-color: #256d2f;
+}
+
+.toggle-button.small {
+	background-color: #e94f4f;
+	color: white;
+	font-size: 0.95rem;
+	padding: 0.4rem 0.8rem;
+}
+
+.toggle-button.small:hover {
+	background-color: #c0392b;
+}
+
+/* --- Containers --- */
+.dropdown-container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.dropdown-container>*:not(:last-child) {
+	margin-bottom: 1.5rem;
+}
+
+/* --- Dropdown Content Styling --- */
+.ingredients-text,
+.nutrition-info,
+.warning-text {
+	padding: 0.75rem 1rem;
+	border-radius: 0 0 8px 8px;
+	margin-top: -0.5rem;
+	border-top: none;
+	max-width: 100%;
+	width: 100%;
+	box-sizing: border-box;
+	overflow-wrap: break-word;
+	overflow-x: hidden;
+}
+
+.ingredients-text {
+	font-style: italic;
+	line-height: 1.5;
+}
+
+.nutrition-info {
+	line-height: 1.6;
+}
+
+.warning-text {
+	border-left: 4px solid red;
+	font-size: 0.95rem;
+	line-height: 1.4;
+}
+
+/* --- Ingredient Warnings --- */
+.ingredient-warning {
+	margin-bottom: 0.75rem;
+}
+
+/* --- Nutrient Colors --- */
+.nutrient-value.good {
+	color: green;
+}
+
+.nutrient-value.ok {
+	color: goldenrod;
+}
+
+.nutrient-value.bad {
+	color: orange;
+}
+
+.nutrient-value.terrible {
+	color: red;
+}
+
+.product-image {
+	max-width: 300px;
+	width: 80%;
+	border-radius: 12px;
+	margin-bottom: 20px;
+	object-fit: contain;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Alternatives --- */
+.better-alternatives {
+	margin-top: 2rem;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+
+.alternative-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+	gap: 1rem;
+	margin-top: 1rem;
+}
+
+.alternative-card {
+	border: 3px solid #39b54a;
+    border-width: 3;
+	border-radius: 8px;
+	padding: 0.75rem;
+	text-align: center;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+	transition: transform 0.2s ease;
+	cursor: pointer;
+}
+
+.alternative-card:hover {
+	transform: translateY(-4px);
+}
+
+.alternative-card img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 6px;
+	margin-bottom: 0.5rem;
+}
+
+#ingredients-list-button {
+	margin-bottom: 1.2rem;
+}
+
+#check-new-item-button {
+	margin-top: 3em;
+	margin-bottom: 4rem;
+    background-color: #39b54a;
+    color: #ffffff;
+}
+
+#check-new-item-button:hover {
+    color: #000000;
+	border: 3px solid #39b54a;
+}
+
+#product-information {
+    color: #000;
+    margin-bottom: 1.2rem;
+}
+
+.better-alternatives {
+	margin-top: 2rem;
+}
+
+.better-alternatives h3 {
+	font-size: 1.25rem;
+	margin-bottom: 1rem;
+}
+
+.alternative-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+	gap: 1rem;
+}
+
+.alternative-card {
+	background-color: #f9f9f9;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	padding: 1rem;
+	text-align: center;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.alternative-card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.alternative-card img {
+	width: 100%;
+	max-height: 120px;
+	object-fit: contain;
+	margin-bottom: 0.5rem;
+	border-radius: 6px;
+}
+
+.nutrition-preview {
+	margin-top: 0.5rem;
+	font-size: 0.85rem;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 0.25rem;
+}
+
+.nutrient {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+
+.nutrient-dot {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+}
+
+.nutrient-dot.good {
+	background-color: #28a745;
+}
+
+.nutrient-dot.ok {
+	background-color: #ffc107;
+}
+
+.nutrient-dot.bad {
+	background-color: #fd7e14;
+}
+
+.nutrient-dot.terrible {
+	background-color: #dc3545;
+}

@@ -1,0 +1,36 @@
+.nutrition-preview {
+	margin-top: 0.5rem;
+	font-size: 0.85rem;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 0.25rem;
+}
+
+.nutrient {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+
+.nutrient-dot {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+}
+
+.nutrient-dot.good {
+	background-color: #28a745;
+}
+
+.nutrient-dot.ok {
+	background-color: #ffc107;
+}
+
+.nutrient-dot.bad {
+	background-color: #fd7e14;
+}
+
+.nutrient-dot.terrible {
+	background-color: #dc3545;
+}
